@@ -1,1 +1,15 @@
 \subsection{排序与 STL}
+	关于排序的算法均在头文件 \header{algorithm} 中。排序算法需要动用随机存取迭代器，所以不能对 list、set、map 等使用排序算法 (list 内置排序函数)。
+	
+	以下各算法，如果不自行提供比较函数，则使用“<”运算符进行比较。区间均为\emph{左闭右开}区间。
+	
+	\begin{itemize}
+		\item sort(begin, end[, comp]): 对区间内所有元素排序。时间复杂度 $O(n\log n)$。
+		\item stable\_{}sort(begin, end[, comp]): 同样是全排序，但会保持相等元素原来的相对次序。
+		\item partial\_{}sort(begin, sortEnd, end[, comp]): 局部排序。对区间 [begin, end) 内的元素排序，使区间 [begin, sortEnd) 内的元素有序。时间复杂度介于 $O(n)$ 和 $O(n\log n)$。
+		\item nth\_{}element(begin, pos, end[, comp]): 寻找从小到大排名第 $k$ 的元素。pos 也是迭代器，并且 pos = begin+$k$-1。平均时间复杂度为 $O(n)$。
+		\item partition(begin, end, pred): 对元素进行分类。对于每个元素 $x$，如果 pred(x) 为真则归入第一组，否则归入第二组。返回值为指向第二组第一个元素的迭代器。平均时间复杂度为 $O(n)$。
+		\item stable\_{}partition(begin, end, pred): 同上，只不过会保持相等元素的相对次序。
+	\end{itemize}
+	
+	以上各算法耗时，从小到大分别为：partition、stable\_{}partition、nth\_{}element、partial\_{}sort、sort、stable\_{}sort。
