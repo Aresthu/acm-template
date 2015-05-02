@@ -1,1 +1,10 @@
 \subsection{最长公共子序列 (LCS)}
+	\paragraph{问题} 有两个序列 $a$ 和 $b$。求一个最长的序列 $p$，使它既是 $a$ 的子序列，又是 $b$ 的子序列，元素之间\emph{不必相邻}。($a,b$ 长度小于 1000)
+	
+	\paragraph{思路} 典型的动态规划问题。设 $f(i,j)$ 表示 $a$ 的前 $i$ 个元素、$b$ 的前 $j$ 个元素中最长公共子序列的长度。那么
+	
+	\[
+		f(i,j)=\left\{{\begin{array}{l}f(i-1,j)\\f(i,j-1)\\f(i-1,j-1)+k(a[i]=b[j]?k=1:k=0)\end{array}}\right.
+	\]
+	
+	\lstinputlisting{ch3/codes/最长公共子序列.cpp}

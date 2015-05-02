@@ -1,1 +1,32 @@
-\subsection{优先队列}
+\subsection{STL 中的优先队列}
+	头文件：\header{queue}
+
+	priority\_{}queue 基于 vector 实现\footnote{模板接受三个参数，第二个就是容器类型。一般使用 vector，也可使用 deque。}。普通的队列是先进先出，而优先队列是按照优先级出队，即无论入队顺序如何，出队的都是最大 (最小) 值。
+	
+	priority\_{}queue 位于 \header{queue}，而 greater 和 less 存在于 \header{functional}。
+	
+	可以用以下几种方式定义优先队列 (假设 arr 是一个有 10 个元素的数组)：
+	
+\begin{lstlisting}
+// 元素为 int 类型，最大值先出列。
+priority_queue<int> q1;
+// 元素为 int 类型，最小值先出列。注意两个 > 之间有空格。
+priority_queue< int,vector<int>,greater<int> > q2;
+// 元素为 float 类型，最大值先出列，用现有数组初始化。
+priority_queue<float> q3(arr, arr+10);
+\end{lstlisting}
+
+	优先队列支持的操作有：push、top (不是 front)、pop、empty 和 size。
+	
+	如果需要使用自己的结构体，你需要重载复制构造函数和 “$>$” 或 “$<$” 运算符。less 对应 “$<$”，表示最大值先出列；greater 对应 “$>$”，表示最小值先出列。
+
+\begin{lstlisting}
+struct MyStruct
+{
+	int v;
+	MyStruct(int i):v(i) {}
+	
+	bool operator < (const MyStruct & b) const {return v < b.v;}
+};
+priority_queue < MyStruct,vector<MyStruct>,less<MyStruct> > q;
+\end{lstlisting}

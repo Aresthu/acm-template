@@ -1,1 +1,13 @@
 \subsection{STL 中的堆算法}
+	头文件：\header{algorithm}
+
+	为了实现堆算法，需要一个支持随机迭代器的容器。当然，一维数组也可以。
+
+	下面各函数的 comp 用于代替默认的小于号。如果不需要，可以省略。如果不指明，那么堆中第一个元素的值是\emph{最大值}。区间为\emph{左闭右开}区间。
+	
+	\begin{itemize}
+		\item make\_{}heap(begin, end, comp): 将某区间内的元素转化为堆。时间复杂度 $O(n)$。
+		\item push\_{}heap(begin, end, comp): 假设 [begin, end-1) 已经是一个堆。现在将 end 之前的那个元素加入堆中，使区间 [begin, end) 重新成为堆。时间复杂度 $O(\log n)$。
+		\item pop\_{}heap(begin, end, comp): 从区间 [begin, end) 取出第一个元素，放到最后位置，然后将区间 [begin, end-1) 重新组成堆。时间复杂度 $O(\log n)$。
+		\item sort\_{}heap(begin, end, comp): 将 heap 转换为一个有序集合。时间复杂度 $O(n\log n)$。
+	\end{itemize}

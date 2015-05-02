@@ -1,1 +1,64 @@
 \subsection{C++ 的 set 和 map}
+	map (映射)、multimap (多重映射)、set (集合)、multiset (多重集合) 属于关联容器，头文件分别位于 \header{map} 和 \header{set} 中。
+
+	map 和 set 的区别：set 实际上就是一组元素的集合，但其中所包含的元素的值是唯一的，且是按一定顺序排列的。集合中的每个元素被称作集合中的实例。其内部通过链表的方式来组织；而 map 提供一种 “键—值” 关系的一对一的数据存储能力，类似于字典。其 “键” 在容器中不可重复，且按一定顺序排列。由于其是按链表的方式存储，它也继承了链表的优缺点。
+
+	multiset 和 set 不同之处在于，multiset 中元素的值可以不唯一。multimap 也类似，在 multimap 中 “键” 可以不唯一。
+	
+	关联容器的特点：
+	
+	\begin{enumerate}
+		\item 关联容器对元素的插入和删除操作比 vector 快，但比 list 慢。
+		\item 关联容器对元素的检索操作比 vector 慢，但是比 list 要快很多。关联容器查找的复杂度基本是 $O(\log n)$。
+		\item set 是内部排序的，这与序列容器有着本质的区别。
+	\end{enumerate}
+	
+	下面是有关 set 和 multiset 的用法：
+	
+\begin{lstlisting}
+// 1. 定义
+set < int, less<int> > s1;		// 集合内部升序排列
+set < int, greater<int> > s2;	// 集合内部降序排列
+// 和其他容器一样，set 也可以用预定义的区间来初始化。
+
+// 2. 查询
+s.count(10);	// 返回 s 中值为 10 的具体数目。但对于 set 来说，返回值不是 0 就是 1。
+s.empty();		// 判断集合是否为空集。
+s.size();		// 返回集合的元素数量。
+
+// 3. 插入和删除
+s.insert(e);	// 将e插入到set中。
+// 注意，insert 的返回值是一个 pair，其 first 是指向插入后元素的迭代器，
+// second 表示插入是否成功（如果其 second 为 false，说明元素已经存在）。
+s.insert(begin, end);	// 将区间 [begin, end) 中的值插入到 s 中。
+s.erase(e);				// 将 e 删除并返回剩余的 e 的数量。
+s.erase(pos);			// 将 pos 处的元素删除。
+s.erase(begin, end);	// 将 [begin, end) 处的元素删除。
+
+// 4. 迭代器：begin、end、rbegin、rend 分别返回正向和反向迭代器。
+\end{lstlisting}
+	
+	下面是有关 map 和 multimap 的用法：
+	
+\begin{lstlisting}	
+// 1. 定义
+map<int, string> m;		// 键的类型是 int，值的类型是 string。
+// 和其他容器一样，map 也可以用预定义的区间来初始化。
+
+// 2. 查询
+// m.at(3) 或 m[3]：返回一个引用，指向键为3时的对应值。注意，它不是数组下标！
+// 如果元素不存在，map 会自动建立这个元素。
+m.count(3);		// 返回 s 中键为 3 的具体数目。但对于 map 来说，返回值不是 0 就是 1。
+m.find(3);		// 返回指向键为 3 的元素的迭代器。如果不存在，则返回 m.end()。
+m.empty();		// 判断映射是否为空映射。
+m.size();		// 返回映射的元素数量。
+
+// 3. 插入和删除
+m.insert(begin, end)	// 将区间 [begin, end) 中的值插入到 s 中。该区间应该是 map 类型的。
+m.insert(make_pair(10, "Hello"));	// 将元素插入到map中。需要<utility>
+m.erase(e);			// 将键为 e 的元素删除。返回值为被删除的 e 的数量。
+m.erase(pos);		// 将 pos 处的元素删除。
+m.erase(begin, end);	// 将 [begin, end) 处的元素删除。
+
+// 4. 迭代器：begin、end、rbegin、rend 分别返回正向和反向迭代器。
+\end{lstlisting}
