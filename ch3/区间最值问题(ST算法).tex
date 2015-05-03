@@ -1,0 +1,20 @@
+\subsection{ST 算法}
+	ST 的全称为 Sparse Table。ST 算法利用了动态规划，其基本思想是分块------把区间最值存储到一个块中。那么，一个长度为 $2^{k}$ 的区间的最值就可以从两个相邻的、长度为 $2^{{k-1}}$ 的块中取。
+	
+	设 $f(i,level)$ 是起点为 $i$、长度为 $2^{{level}}$ 的区间的最值，则状态转移方程为 (求最小值用 min，求最大值则用 max)：
+	
+	\[
+		f(i,level)=min\{f(i,level-1),f(i+2^{{level-1}},level-1)\}
+	\]
+	
+	边界条件：$level=0$ 时只有一个元素，所以 $f(i,0)$ 自然就等于下标为 $i$ 的数。
+	
+	询问区间 $[left,right]$ 的最值时，首先令 $k={\mathrm {int}}(log_{2}(right-left+1))$，则区间最小值为
+	
+	\[
+		\textrm{RMQ}(left,right)=min\{f(left,k),f(right-2^{k}+1,k)\}
+	\]
+	
+	该算法是在线算法，预处理的时间为 $O(n\log n)$，但回答一次询问的仅为 $O(1)$。
+	
+	\lstinputlisting{ch3/codes/st算法.cpp}

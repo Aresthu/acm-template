@@ -1,6 +1,11 @@
 \section{区间最值问题 (RMQ)}
-    \input{ch3/线段树.tex}
-    \input{ch3/ST算法.tex}
+	RMQ (Range Minimum/Maximum Query) 问题是指：已知长度为 $n$ 的数列 $A$，有若干个问题，每个问题都是求某个区间的最值。
+	
+	由于问题很多，并且区间范围不确定，因此采用朴素算法是不可行的。
+	
+	线段树是可行的。采用线段树，预处理的时间为 $O(n)$，查询的时间是 $O(\log n)$。并且，如果规定数列元素\emph{可以更改}，那么基本上只能用线段树来处理。\emph{这种情况下，下面的算法不可用。}
+
+    \input{ch3/区间最值问题(ST算法).tex}
     \input{ch3/±1-RMQ问题.tex}
     \input{ch3/RMQ转为LCA.tex}
     \input{ch3/第k小值.tex}

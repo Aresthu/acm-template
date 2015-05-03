@@ -1,1 +1,15 @@
 \subsection{±1-RMQ 问题}
+	如果序列相邻两个元素的差是 $\pm 1$，那么 RMQ 有一个更优的处理方法。处理完成后，预处理的复杂度为 $O(n)$，询问的复杂度为 $O(1)$。
+	
+	算法的核心仍然在于分块。把数组划分为每部分为 $L=\log _{2}n/2$ 的小块，则一共会产生 $m=2n/\log _{2}n$ 个组。将 $m$ 个块的最小值组成序列 Blocks。用 ST 算法对 Blocks 进行预处理，则预处理的时间为 $O(m\log m)=O(2n/\log _{2}n\log(2n/\log _{2}{}n))=O(n)$。
+	
+	接下来我们要在 $O(1)$ 的时间内回答 Blocks 上的 RMQ 询问。首先，对于一般的询问 RMQ$(i,j)$，求出 $i$ 所在的编号 $x$ 和它在块中的下标 $a$，以及 $j$ 所在的块编号 $y$ 和它在块中的下标 $b$。
+	
+	\begin{itemize}
+		\item 如果 $x=y$，那么执行块内 RMQ: In-RMQ$(x,a,b)$，表示第 $x$ 块中下标 $a$ 到 $b$ 的最小值。
+		\item 如果 $x\neq y$，那么就把区间 $[i,j]$ 分成三部分------块 $x$ 中从 $i$ 到块末的最小值 In-RMQ$(x, a, L)$、在块 $y$ 中从块首到 $j$ 的最小值 In-RMQ$(y,1,b)$ 以及第 $x+1$ 块到 $y-1$ 块的最小值 RMQ$(A’,x+1,y-
+		1)$。所以，RMQ 询问的结果为 $\textrm{RMQ}(A',x,y)=\min\{\textrm{In-RMQ}(x,a,L),\textrm{In-RMQ}(y,1,b),\textrm{RMQ}(A',x+1,y-1)\}$
+	\end{itemize}
+	
+	
+	
