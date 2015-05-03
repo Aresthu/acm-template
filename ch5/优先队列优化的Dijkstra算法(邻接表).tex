@@ -1,1 +1,6 @@
 \subsection{优先队列优化的 Dijkstra 算法 (邻接表)}
+	朴素的 Dijkstra 算法在 “选 $d$ 值最小的点” 时要浪费很多时间，所以可以用优先队列来优化。优化之后的时间复杂度为 $O[(n+m)\log m]$，最差情况 (密集图) 则为 $O(n^{2}\log m)$。
+
+	由于优先队列基于 vector，本身存在一定的局限性 (例如内存分配可能会占用一些时间)，所以也可以采用堆来优化。
+	
+	\lstinputlisting{ch5/codes/最短路(优先队列dijkstra).cpp}

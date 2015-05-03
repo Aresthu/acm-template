@@ -1,0 +1,40 @@
+\subsection{如何选用}
+	Floyd 是多源最短路算法，而另外几种是单源最短路算法。Floyd 可以一次性计算任意两个点之间的最短路。
+	
+	下面按照稀疏图和稠密图来进行分类：
+	
+	\paragraph{稠密图} 邻接矩阵比邻接表合适。
+	\begin{itemize}
+		\item 如果 n 不大，可以用邻接矩阵的话，Dijkstra 是最好的选择，SPFA 也可以。
+		\item n>300 时最好不要用 Floyd 算法。
+		\item n>200 时尽量不要用 Bellman-Ford 算法。
+	\end{itemize}
+	
+	\paragraph{稀疏图} 邻接矩阵会造成一定的浪费。可能邻接表更合适。
+	
+	\begin{itemize}
+		\item 超过 3000 个点就不要用朴素的 Dijkstra 算法了。
+		\item 边数超过 50000 时尽量不要用 Bellman-Ford 算法。
+		\item 超过 500000 条边就不要用 SPFA 加邻接表了。
+		\item 点和边数很多的时候，优先队列优化的 Dijkstra 是更合适的。不过，由于优先队列自身的原因，速度会比堆慢一些。
+	\end{itemize}
+	
+	\paragraph{最短路算法的时间复杂度} 见表 \ref{tab:ch5_zdl}
+	
+	\begin{table}[htb]
+		\centering
+		\begin{tabular}{lll}
+			\toprule
+			算法  &  图的表示法  &  时间复杂度	\\
+			\midrule
+			Dijkstra &	邻接矩阵（邻接表也可） &	$O(n^{2})$	\\
+			优先队列优化的 Dijkstra &	邻接表 &	一般 $O[(m+n)\log m]$，密集图 $O(n^{2}\log m)$ \\
+			Bellman-Ford &	边目录 &	$O(mn)$	\\
+			优化的 Bellman（SPFA）	& 邻接表 &	$O(km)$，其中 k 可认为是常数。	\\
+			Floyd &	邻接矩阵 &	$O(n^{3})$	\\
+			\bottomrule
+		\end{tabular}
+		\label{tab:ch5_zdl}
+		\caption{最短路算法的时间复杂度比较}
+	\end{table}
+	

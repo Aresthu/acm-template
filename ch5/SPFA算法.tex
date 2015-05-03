@@ -1,1 +1,6 @@
 \subsection{SPFA 算法}
+	Bellman-Ford 在迭代时会有一些冗余的松弛操作。SPFA 则通过队列对其进行了一个优化。
+	
+	时间复杂度为 $O(km)$，其中 $k$ 为所有顶点进队的平均次数，一般情况下 $k\leqslant 2$。
+	
+	\lstinputlisting{ch5/codes/最短路(spfa).cpp}

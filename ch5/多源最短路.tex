@@ -1,0 +1,6 @@
+\subsubsection{多源最短路}
+    Floyd 算法是动态规划算法。设 $f(i,j)$ 表示从 $i$ 到 $j$ 的最短路径长度，则 $f(i,j)=\min\{f(i,k)+f(k,j)\}$ (其中 $i$ 到 $k$、$k$ 到 $j$ 都是连通的)。
+    
+    时间复杂度为 $O(n^{3})$。适用于反复查询任意两点的最短距离。
+    
+    \lstinputlisting{ch5/codes/最短路(floyd).cpp}
