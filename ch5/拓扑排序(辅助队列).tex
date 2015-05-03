@@ -1,0 +1,12 @@
+\subsection{辅助队列}
+	操作步骤如下：
+	
+	\begin{enumerate}
+		\item 统计每个结点的入度。
+		\item 将入度为零的点加入队列。
+		\item 依次对入度为零的点进行删边操作，同时将新得到的入度为零的点加入队列。
+		\item 继续对队列中未进行操作的点进行操作。
+		\item 如果排序结束，但仍然存在入度不为 0 的点，说明图中有环。
+	\end{enumerate}
+	
+	\lstinputlisting{ch5/codes/拓扑排序(队列).cpp}

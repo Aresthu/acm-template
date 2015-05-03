@@ -1,1 +1,6 @@
-\subsection{最小生成树 (Kruskal)}
+\subsubsection{最小生成树 (Kruskal)}
+	Kruskal 算法是贪心算法,贪心策略为：选目前情况下能连上的权值最小的边，若与已经生成的树不会形成环，加入之，直到 $n-1$ 条边加入完毕。
+	
+	时间复杂度为 $O(n\log m)$，最差情况为 $O(m\log n)$。相比于 Prim，这个算法更常用。
+	
+	\lstinputlisting{ch5/codes/最小生成树(kruskal).cpp}
