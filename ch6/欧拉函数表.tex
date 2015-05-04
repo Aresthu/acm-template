@@ -1,0 +1,11 @@
+\subsubsection{欧拉函数表}
+	欧拉函数有两条性质：
+	
+	\begin{enumerate}
+		\item 对于素数 $p$，$\varphi (p)=p-1,\varphi (p^{n})=p^{n}(p-1)$
+		\item 如果 $\gcd(x,y)=1$，则 $\varphi (xy)=\varphi (x)\varphi (y)$，也就是说 $\varphi (x)$ 是积性函数。
+	\end{enumerate}
+	
+	下面的代码就是根据欧拉函数的第二条性质来计算的。
+	
+	\lstinputlisting{ch6/codes/欧拉函数表.cpp}
