@@ -1,1 +1,11 @@
 \subsection{GCD 与 LCM}
+	求两个数的最大公约数的基本思想：$\gcd(a,b)=\gcd(b,a\mod {}b)$
+	
+	两个数的最大公约数和最小公倍数的关系为 $\gcd(a,b)\times \lcm(a,b)=ab$，因此可以通过 $\lcm(a,b)={\frac  {ab}{\gcd(a,b)}}$ 来求出最小公倍数。
+	
+\begin{lstlisting}
+int gcd(int a, int b) { return b ? gcd(b,a%b) : a; }
+int lcm(int a, int b) { return a/gcd(a,b)*b; }
+\end{lstlisting}
+	
+	如果求多个数值的最大公约数或最小公倍数，可以先求出前两个数的值，然后再将结果和第三个数一起求值。
