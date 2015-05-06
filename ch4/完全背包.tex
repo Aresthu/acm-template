@@ -1,1 +1,27 @@
 \subsection{完全背包}
+	\paragraph{问题} 有 $n$ \emph{种}物品和一个容量为 $C$ 的背包。第 $i$ 种物品的重量是 $w_i$，价值是 $v_i$，\emph{数量无限}。求解将哪些物品装入背包可使价值总和最大。
+			
+	\paragraph{思路} 二维状态转移方程为 
+		\[ f[i][c]=\max \left\{
+			\begin{array}{l}
+			f[i-1][c]	\\
+			f[i][c-w_i]+v_i
+			\end{array} \right.
+		\]
+
+	考虑到递推过程，可转化为一维数组，即
+	
+		\[ f[c]=\max\{f[c],f[c-w_i]+v_i\} \]
+			
+\begin{lstlisting}
+for (int i=1;i<=n;i++)
+	for (int c=w[i];c<=C;c++)
+		f[c] = max(f[c], f[c-w[i]] + v[i]);
+\end{lstlisting}
+			
+	注意：
+			
+	\begin{itemize}
+		\item 内外层的 for 可以互换。
+		\item 与 0/1 背包不同的是，本代码中 $c$ 是从小到大循环的。
+	\end{itemize}

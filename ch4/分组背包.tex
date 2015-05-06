@@ -1,1 +1,11 @@
 \subsection{分组背包}
+	\paragraph{问题} 有 $n$ 件物品和一个容量为 $C$ 的背包。第 $i$ 件物品的重量是 $w_i$，价值是 $v_i$。这些物品\emph{被划分到 $K$ 个组中}，每组内部的物品互相冲突，最多选一件。求解将哪些物品装入背包可使价值总和最大。
+
+	\paragraph{思路} 设 $f[k][c]$ 为前 $k$ 组物品花费 $c$ 时可以获得的最大价值，则
+
+		\[ f[k][c] = max \left\{ 
+			\begin{array}{l}
+			f[k-1][c]				\\
+			f[k-1][c-w_i]+v_i, \textrm{物品} i \textrm{属于第} k \textrm{组}
+			\end{array}
+			\right. \]

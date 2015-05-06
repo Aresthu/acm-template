@@ -1,3 +1,16 @@
-\subsection{01 背包}
-    \subsubsection{二维数组表示}
-    \subsubsection{一维数组表示}
+\subsection{0/1 背包}
+	\paragraph{问题} 有 $n$ 件物品和一个容量为 $C$ 的背包。第 $i$ 件物品的重量是 $w_i$,价值是 $v_i$。求解将哪些物品装入背包可使价值总和最大。
+	
+    \paragraph{二维数组表示} 令 $f[i][c]$ 表示前 $i$ 件物品\emph{恰好}\footnote{如果一开始将各元素初始化为 $-1$ 或某个特定的数值，那么本算法将可以用于检测是否有解。}放入一个容量为 $c$ 的背包之后可以获得的最大价值。则
+		
+		\[ f[i][c]=\max\{f[i-1][c], f[i-1][c-w_i]+v_i\} \]
+		
+    \paragraph{一维数组表示} 上面的递推过程就好像一辆扫雪车在下雪天绕着环形道扫雪。所以，实际上用一维数组也一样能表示。
+		
+		\[ f[c] = \max\{f[c], f[c-w_i]+v_i\} \]
+
+\begin{lstlisting}
+for (int i=1;i<=n;i++)
+	for (int c=C;c>=w[i];c--)		// 注意递推 c 的顺序
+		f[c] = max(f[c], f[c-w[i]] + v[i]);
+\end{lstlisting}

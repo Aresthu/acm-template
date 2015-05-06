@@ -1,1 +1,30 @@
 \subsection{多重背包}
+	\paragraph{问题} 有 $n$ 种物品和一个容量为 $C$ 的背包。第 $i$ 种物品的重量是 $w_i$，价值是 $v_i$，\emph{数量为 $a_i$}。求解将哪些物品装入背包可使价值总和最大。
+
+	\paragraph{思路} 此类题采用二进制法，即按照二进制的数量级 (1,2,4,8\ldots\dots) 对 $a_i$ 进行分割，使问题转化为 0/1 背包问题。
+
+\begin{lstlisting}			
+for (int i=1;i<=n;i++)
+{
+	if (w[i]*a[i]>C)		// 如果物品够多，问题实际上就是完全背包问题
+	{
+		for (int c=w[i];c<=C;c++)
+			if (c>=w[i]) f[c] = max(f[c], f[c-w[i]] + v[i]);
+	}
+	else
+	{
+		int k=1, amount=a[i];
+		while (k<amount)
+		{
+			// 是否取一个重量为 k×w[i], 价值为 k×v[i] 的物品?
+			for (int c=k*w[i];c>=0;c--)
+				f[c] = max(f[c], f[c-w[i]] + k*v[i]);
+			amount-=k;
+			k+=k;
+		}
+		// 把剩下的作为单独一个物品
+		for (int c=amount*w[i];c>=0;c--)
+			f[c] = max(f[c], f[c-w[i]] + amount*v[i]);
+	}
+}
+\end{lstlisting}
