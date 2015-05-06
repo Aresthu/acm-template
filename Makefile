@@ -6,4 +6,4 @@ all:
 	sed -nf toc2md.sed main.toc > 目录.md
 
 clean:
-	-rm main.aux main.log main.out main.pdf main.synctex.gz main.toc
+	-rm main.aux main.log main.out main.pdf main.synctex.gz main.toc missfont.log
