@@ -1,3 +1,48 @@
 \subsection{同余方程组 中国剩余定理}
+	\paragraph{问题} 一个数，被 3 除余 1，被 5 除余 2，被 7 除余 3\ldots\ldots{}这个数是多少？
+
     \subsubsection{模不互素}
+	    先考虑两组方程的情况：
+	    \[ \begin{array}{l}
+	    x \equiv a_1 (\mod m_1)		\\
+	    x \equiv a_2 (\mod m_2)				
+	    \end{array} \]
+	    
+	    有解的充要条件是 $gcd(m_1, m_2) | (a_1-a_2)$。如果有解，先将以上二式转化：
+	    
+	    \[ \begin{array}{l}
+	    x = a_1 + m_1 y	\\
+	    x = a_2 + m_2 z
+	    \end{array} \]
+	    
+	    联立得 $a_1 + m_1 y = a_2 + m_2 z$。令 $c=\gcd(m_1, m_2)$，则
+	    
+	    \[
+	    \frac{m_2}{c}z - \frac{m_1}{c}y = \frac{a_1-a_2}{c}
+	    \]
+	    
+	    然后用扩展的欧几里得算法求出 $p,q$，使得
+	    
+	    \[
+	    \frac{m_2}{c}p + \frac{m_1}{c}q = \gcd(\frac{m_2}{c},\frac{m_1}{c})=1
+	    \]
+	    
+	    那么只要取 $z=p\times(a_1-a_2)/c$，则 $x=a_2+m_2z$。
+	    
+	    对于 $m_i$ 不是两两互素的情况，可以每次解两个方程，然后将两方程合并。
+	    
     \subsubsection{模两两互素}
+		设 $m_1, m_2, \cdots, m_k$ \emph{两两互素}，则下面同余方程组
+		
+		\[	\begin{array}{c}
+		x \equiv a_1 (\mod m_1)	\\
+		x \equiv a_2 (\mod m_2)	\\
+		\vdots				\\
+		x \equiv a_k (\mod m_k)
+		\end{array} \]
+		
+		令~$M=m_1m_2\cdots{}m_k$，则方程组在~$0 \leqslant x < M$ 内有唯一解。				
+		
+		具体解法将在代码注释中给出解释。注意，此处并没有给出 exgcd 的代码。
+		
+		\lstinputlisting{ch6/codes/中国剩余定理.cpp}

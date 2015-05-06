@@ -1,1 +1,20 @@
 \subsection{排列组合的计算}
+	\begin{enumerate}
+		\item 排列的定义：$A^m_n=n(n-1)(n-2)\cdots(n-m+1)$
+		\item 组合的定义：$C^m_n=\frac{A^m_n}{m!}=\frac{n(n-1)(n-2)\cdots(n-m+1)}{m!}$
+		\item 组合数的计算：
+		\begin{itemize}
+			\item 加法：$C^m_n=C^{m-1}_{n-1}+C^m_{n-1}$，边界条件为 $C^0_n=C^n_n=1$。
+			\item 乘法：(注意不要改变乘除顺序！)
+			\[
+			C^m_n = \left\lbrace \begin{array}{ll}
+			1	&	(m=0)	\\
+			\frac{(n-m+1)C^{m-1}_n}{m}	&	(0<m \leqslant \frac{n}{2})	\\
+			C^{n-m}_n					&	(\frac{n}{2}<m \leqslant n)
+			\end{array}
+			\right.
+			\]
+		\end{itemize}
+	\end{enumerate}
+	
+	注意：很多排列组合问题的答案确实可以用数学表达式来表示，但是，数学表达式可能并不适合计算机，因此，\emph{尝试寻找递推关系往往比直接找数学关系更好。}
