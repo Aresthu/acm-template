@@ -1,0 +1,333 @@
+\contentsline {chapter}{\numberline {第一章\hspace {0.3em}}基本算法}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}模拟}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}贪心}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}背包问题}{1}{subsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.1.1}最优装载问题}{1}{subsubsection.1.2.1.1}
+\contentsline {paragraph}{问题}{1}{section*.2}
+\contentsline {paragraph}{算法}{1}{section*.3}
+\contentsline {subsubsection}{\numberline {1.2.1.2}部分背包问题}{1}{subsubsection.1.2.1.2}
+\contentsline {paragraph}{问题}{1}{section*.4}
+\contentsline {paragraph}{算法}{1}{section*.5}
+\contentsline {subsubsection}{\numberline {1.2.1.3}乘船问题}{1}{subsubsection.1.2.1.3}
+\contentsline {paragraph}{问题}{1}{section*.6}
+\contentsline {paragraph}{算法}{1}{section*.7}
+\contentsline {subsection}{\numberline {1.2.2}区间上的问题}{2}{subsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.1}选择不相交区间}{2}{subsubsection.1.2.2.1}
+\contentsline {paragraph}{问题}{2}{section*.8}
+\contentsline {paragraph}{思路}{2}{section*.9}
+\contentsline {subsubsection}{\numberline {1.2.2.2}区间选点问题}{2}{subsubsection.1.2.2.2}
+\contentsline {paragraph}{问题}{2}{section*.10}
+\contentsline {paragraph}{思路}{2}{section*.11}
+\contentsline {subsubsection}{\numberline {1.2.2.3}区间覆盖问题}{2}{subsubsection.1.2.2.3}
+\contentsline {paragraph}{问题}{2}{section*.12}
+\contentsline {paragraph}{思路}{3}{section*.13}
+\contentsline {subsection}{\numberline {1.2.3}Huffman 编码}{4}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}两个调度问题}{4}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}递归和分治}{4}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}分治法的思考方法}{4}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}二分法与三分法}{4}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}最近点对问题}{4}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}递推}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}构造}{4}{section.1.5}
+\contentsline {section}{\numberline {1.6}回溯法}{4}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}连续邮资问题}{4}{subsection.1.6.1}
+\contentsline {section}{\numberline {1.7}离散化}{4}{section.1.7}
+\contentsline {chapter}{\numberline {第二章\hspace {0.3em}}搜索}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}盲目搜索}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}纯随机搜索}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}深度优先搜索}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}广度优先搜索}{6}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}迭代加深搜索}{6}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}双向广度优先搜索}{6}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}启发式搜索}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}A×算法}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}IDA×算法}{6}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}博弈论}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}极大极小过程}{6}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Min-Max 算法}{6}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}alpha-beta 剪枝}{6}{subsubsection.2.3.1.2}
+\contentsline {subsection}{\numberline {2.3.2}组合游戏}{6}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Nim 过程}{6}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}记录路径}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}搜索的优化}{6}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}剪枝}{6}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}判重}{6}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}预处理}{6}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {第三章\hspace {0.3em}}数据结构}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}串}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}C++ 中的字符串类}{7}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}string}{7}{subsubsection.3.1.1.1}
+\contentsline {paragraph}{输入/输出}{7}{section*.14}
+\contentsline {paragraph}{基本操作}{7}{section*.15}
+\contentsline {subsubsection}{\numberline {3.1.1.2}stringstream}{8}{subsubsection.3.1.1.2}
+\contentsline {subsection}{\numberline {3.1.2}串匹配}{8}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}KMP 算法}{8}{subsubsection.3.1.2.1}
+\contentsline {paragraph}{KMP 算法的原理}{8}{section*.16}
+\contentsline {paragraph}{实现}{9}{section*.17}
+\contentsline {subsection}{\numberline {3.1.3}Karp-Rabin 算法}{10}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}最短公共祖先}{10}{subsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.4.1}两个字符串}{10}{subsubsection.3.1.4.1}
+\contentsline {subsubsection}{\numberline {3.1.4.2}多个字符串}{10}{subsubsection.3.1.4.2}
+\contentsline {section}{\numberline {3.2}二分查找}{10}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}实现}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}二分查找求上下界}{11}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}STL 中的二分查找}{11}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}二分答案}{12}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}排序}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}快速排序}{12}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}归并排序}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}堆排序}{14}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}简单排序算法}{14}{subsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4.1}插入排序}{14}{subsubsection.3.3.4.1}
+\contentsline {subsubsection}{\numberline {3.3.4.2}冒泡排序}{14}{subsubsection.3.3.4.2}
+\contentsline {subsubsection}{\numberline {3.3.4.3}选择排序}{14}{subsubsection.3.3.4.3}
+\contentsline {subsection}{\numberline {3.3.5}非比较排序}{14}{subsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.5.1}基数排序}{14}{subsubsection.3.3.5.1}
+\contentsline {subsubsection}{\numberline {3.3.5.2}桶排序}{14}{subsubsection.3.3.5.2}
+\contentsline {subsubsection}{\numberline {3.3.5.3}计数排序}{14}{subsubsection.3.3.5.3}
+\contentsline {subsection}{\numberline {3.3.6}第 k 大元素}{14}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}排序与 STL}{15}{subsection.3.3.7}
+\contentsline {section}{\numberline {3.4}哈希表}{16}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}基本实现}{16}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}字符串的哈希函数}{16}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}并查集}{16}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}并查集}{16}{subsection.3.5.1}
+\contentsline {paragraph}{问题}{16}{section*.18}
+\contentsline {subsection}{\numberline {3.5.2}朋友-敌人模型}{16}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}二叉树}{16}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}基本二叉树}{16}{subsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.1.1}实现}{17}{subsubsection.3.6.1.1}
+\contentsline {subsubsection}{\numberline {3.6.1.2}完全二叉树}{18}{subsubsection.3.6.1.2}
+\contentsline {subsection}{\numberline {3.6.2}哈夫曼树}{18}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}字典树 (Trie)}{20}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}二叉排序树}{20}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}基本的二叉排序树}{20}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Treap}{20}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Size Balanced Tree (SBT)}{20}{subsection.3.7.3}
+\contentsline {subsection}{\numberline {3.7.4}C++ 的 set 和 map}{20}{subsection.3.7.4}
+\contentsline {section}{\numberline {3.8}二叉堆}{21}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}基本二叉堆}{21}{subsection.3.8.1}
+\contentsline {paragraph}{二叉堆}{21}{section*.19}
+\contentsline {paragraph}{实现}{22}{section*.20}
+\contentsline {subsection}{\numberline {3.8.2}左偏树}{23}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}STL 中的堆算法}{23}{subsection.3.8.3}
+\contentsline {subsection}{\numberline {3.8.4}STL 中的优先队列}{24}{subsection.3.8.4}
+\contentsline {subsection}{\numberline {3.8.5}线段树}{24}{subsection.3.8.5}
+\contentsline {subsubsection}{\numberline {3.8.5.1}一维线段树}{24}{subsubsection.3.8.5.1}
+\contentsline {paragraph}{问题}{24}{section*.21}
+\contentsline {paragraph}{类似的问题}{25}{section*.22}
+\contentsline {paragraph}{代码}{25}{section*.23}
+\contentsline {subsubsection}{\numberline {3.8.5.2}二维线段树}{27}{subsubsection.3.8.5.2}
+\contentsline {subsubsection}{\numberline {3.8.5.3}矩形并}{27}{subsubsection.3.8.5.3}
+\contentsline {subsection}{\numberline {3.8.6}树状数组}{27}{subsection.3.8.6}
+\contentsline {paragraph}{问题}{27}{section*.24}
+\contentsline {paragraph}{树状数组}{27}{section*.25}
+\contentsline {subsubsection}{\numberline {3.8.6.1}一维树状数组}{27}{subsubsection.3.8.6.1}
+\contentsline {subsubsection}{\numberline {3.8.6.2}二维树状数组}{28}{subsubsection.3.8.6.2}
+\contentsline {section}{\numberline {3.9}后缀数组}{29}{section.3.9}
+\contentsline {section}{\numberline {3.10}最长 xx 子序列}{29}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}最长非降子序列 (LIS)}{29}{subsection.3.10.1}
+\contentsline {paragraph}{问题}{29}{section*.26}
+\contentsline {paragraph}{思路}{29}{section*.27}
+\contentsline {subsection}{\numberline {3.10.2}最长公共子序列 (LCS)}{30}{subsection.3.10.2}
+\contentsline {paragraph}{问题}{30}{section*.28}
+\contentsline {paragraph}{思路}{30}{section*.29}
+\contentsline {subsection}{\numberline {3.10.3}最长公共上升子序列}{31}{subsection.3.10.3}
+\contentsline {paragraph}{问题}{31}{section*.30}
+\contentsline {paragraph}{思路}{31}{section*.31}
+\contentsline {paragraph}{优化}{31}{section*.32}
+\contentsline {paragraph}{代码}{31}{section*.33}
+\contentsline {section}{\numberline {3.11}最近公共祖先 (LCA)}{32}{section.3.11}
+\contentsline {paragraph}{问题}{32}{section*.34}
+\contentsline {subsection}{\numberline {3.11.1}在线算法 (DFS+ST)}{33}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}离线算法 (Tarjan)}{33}{subsection.3.11.2}
+\contentsline {subsection}{\numberline {3.11.3}LCA 转 RMQ}{34}{subsection.3.11.3}
+\contentsline {section}{\numberline {3.12}区间最值问题 (RMQ)}{34}{section.3.12}
+\contentsline {subsection}{\numberline {3.12.1}ST 算法}{34}{subsection.3.12.1}
+\contentsline {subsection}{\numberline {3.12.2}±1-RMQ 问题}{35}{subsection.3.12.2}
+\contentsline {subsection}{\numberline {3.12.3}RMQ 转为 LCA}{36}{subsection.3.12.3}
+\contentsline {subsection}{\numberline {3.12.4}第 k 小值}{36}{subsection.3.12.4}
+\contentsline {section}{\numberline {3.13}逆序对}{37}{section.3.13}
+\contentsline {subsection}{\numberline {3.13.1}二分法}{37}{subsection.3.13.1}
+\contentsline {subsection}{\numberline {3.13.2}树状数组}{38}{subsection.3.13.2}
+\contentsline {subsection}{\numberline {3.13.3}逆序对数推排列数}{40}{subsection.3.13.3}
+\contentsline {paragraph}{问题}{40}{section*.35}
+\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}动态规划}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}基本动态规划}{42}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}区间问题}{42}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}环形问题}{42}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}判定性问题}{42}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}棋盘分割}{42}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}最长公共子序列 (动态规划)}{42}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}最长上升子序列 (动态规划)}{42}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}背包问题}{42}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}部分背包}{42}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}01 背包}{42}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}二维数组表示}{42}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}一维数组表示}{42}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}完全背包}{42}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}多重背包}{42}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}二维费用背包}{42}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}分组背包}{42}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}混合背包}{42}{subsection.4.2.7}
+\contentsline {subsection}{\numberline {4.2.8}泛化物品背包}{42}{subsection.4.2.8}
+\contentsline {section}{\numberline {4.3}概率和期望}{42}{section.4.3}
+\contentsline {section}{\numberline {4.4}二分判定型问题}{42}{section.4.4}
+\contentsline {section}{\numberline {4.5}树型动态规划}{42}{section.4.5}
+\contentsline {section}{\numberline {4.6}动态规划的优化}{42}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}状态压缩}{42}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}四边形不等式}{42}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}单调队列优化}{42}{subsection.4.6.3}
+\contentsline {chapter}{\numberline {第五章\hspace {0.3em}}图论}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}图论的基本概念}{43}{section.5.1}
+\contentsline {section}{\numberline {5.2}图的遍历}{43}{section.5.2}
+\contentsline {section}{\numberline {5.3}拓扑排序}{43}{section.5.3}
+\contentsline {paragraph}{问题}{43}{section*.36}
+\contentsline {paragraph}{拓扑排序}{43}{section*.37}
+\contentsline {subsection}{\numberline {5.3.1}DFS}{43}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}辅助队列}{44}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}拓扑排序个数}{45}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}欧拉路径}{47}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}无向图的欧拉路径}{47}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}有向图的欧拉路径}{49}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}生成树 (森林)}{49}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}最小生成树}{49}{subsection.5.5.1}
+\contentsline {paragraph}{问题}{49}{section*.38}
+\contentsline {paragraph}{最小生成树}{49}{section*.39}
+\contentsline {subsubsection}{\numberline {5.5.1.1}最小生成树 (Prim)}{49}{subsubsection.5.5.1.1}
+\contentsline {subsubsection}{\numberline {5.5.1.2}最小生成树 (Kruskal)}{50}{subsubsection.5.5.1.2}
+\contentsline {subsection}{\numberline {5.5.2}次小生成树}{52}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}最小生成森林}{52}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}最小树形图}{52}{subsection.5.5.4}
+\contentsline {section}{\numberline {5.6}最短路}{52}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}如何选用}{52}{subsection.5.6.1}
+\contentsline {paragraph}{稠密图}{52}{section*.40}
+\contentsline {paragraph}{稀疏图}{52}{section*.41}
+\contentsline {paragraph}{最短路算法的时间复杂度}{53}{section*.42}
+\contentsline {subsection}{\numberline {5.6.2}Dijkstra 算法 (邻接矩阵)}{53}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}优先队列优化的 Dijkstra 算法 (邻接表)}{54}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}Bellman-Ford 算法}{56}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.5}SPFA 算法}{57}{subsection.5.6.5}
+\contentsline {subsection}{\numberline {5.6.6}Floyd 算法}{58}{subsection.5.6.6}
+\contentsline {subsubsection}{\numberline {5.6.6.1}多源最短路}{58}{subsubsection.5.6.6.1}
+\contentsline {subsubsection}{\numberline {5.6.6.2}最小环}{61}{subsubsection.5.6.6.2}
+\contentsline {subsection}{\numberline {5.6.7}第 K 短路}{61}{subsection.5.6.7}
+\contentsline {section}{\numberline {5.7}二分图}{61}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}是否为二分图}{61}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}最大匹配}{61}{subsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.2.1}匈牙利算法 (DFS)}{61}{subsubsection.5.7.2.1}
+\contentsline {subsubsection}{\numberline {5.7.2.2}匈牙利算法 (BFS)}{61}{subsubsection.5.7.2.2}
+\contentsline {subsubsection}{\numberline {5.7.2.3}Hopcroft-Carp 算法}{61}{subsubsection.5.7.2.3}
+\contentsline {subsection}{\numberline {5.7.3}最大权匹配}{61}{subsection.5.7.3}
+\contentsline {subsection}{\numberline {5.7.4}最小点集覆盖}{61}{subsection.5.7.4}
+\contentsline {subsection}{\numberline {5.7.5}最大独立集}{61}{subsection.5.7.5}
+\contentsline {subsection}{\numberline {5.7.6}最佳匹配}{61}{subsection.5.7.6}
+\contentsline {section}{\numberline {5.8}网络流}{61}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}最大流}{61}{subsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.1.1}增广路算法 (Edmonds-Karp 算法)}{61}{subsubsection.5.8.1.1}
+\contentsline {subsubsection}{\numberline {5.8.1.2}Dinic 算法}{61}{subsubsection.5.8.1.2}
+\contentsline {subsubsection}{\numberline {5.8.1.3}SAP 算法}{61}{subsubsection.5.8.1.3}
+\contentsline {subsubsection}{\numberline {5.8.1.4}有下界的最大流}{61}{subsubsection.5.8.1.4}
+\contentsline {subsubsection}{\numberline {5.8.1.5}多源多汇最大流}{61}{subsubsection.5.8.1.5}
+\contentsline {subsection}{\numberline {5.8.2}最小费用流}{61}{subsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.2.1}最小费用流}{61}{subsubsection.5.8.2.1}
+\contentsline {subsubsection}{\numberline {5.8.2.2}最小费用最大流}{61}{subsubsection.5.8.2.2}
+\contentsline {subsection}{\numberline {5.8.3}最小费用最大流}{61}{subsection.5.8.3}
+\contentsline {subsubsection}{\numberline {5.8.3.1}最小费用最大流}{61}{subsubsection.5.8.3.1}
+\contentsline {subsubsection}{\numberline {5.8.3.2}最大费用最大流}{61}{subsubsection.5.8.3.2}
+\contentsline {section}{\numberline {5.9}差分约束系统}{61}{section.5.9}
+\contentsline {section}{\numberline {5.10}连通性}{61}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}双连通分量}{61}{subsection.5.10.1}
+\contentsline {subsection}{\numberline {5.10.2}强连通分量}{61}{subsection.5.10.2}
+\contentsline {section}{\numberline {5.11}图的割边与割点}{61}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}无向图最小割}{61}{subsection.5.11.1}
+\contentsline {subsection}{\numberline {5.11.2}最小点割集}{61}{subsection.5.11.2}
+\contentsline {subsection}{\numberline {5.11.3}最小边割集}{61}{subsection.5.11.3}
+\contentsline {subsection}{\numberline {5.11.4}最佳点割集}{61}{subsection.5.11.4}
+\contentsline {subsection}{\numberline {5.11.5}最佳边割集}{61}{subsection.5.11.5}
+\contentsline {chapter}{\numberline {第六章\hspace {0.3em}}数学}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}组合数学}{63}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}排列组合的计算}{63}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}排列组合的生成}{63}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}类循环排列}{63}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}全排列 (无重复)}{63}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}全排列 (有重复)}{64}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}一般组合}{65}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}求全部子集}{66}{subsubsection.6.1.2.5}
+\contentsline {subsubsection}{\numberline {6.1.2.6}由上一排列产生下一排列}{66}{subsubsection.6.1.2.6}
+\contentsline {subsubsection}{\numberline {6.1.2.7}由上一组合产生下一组合}{67}{subsubsection.6.1.2.7}
+\contentsline {subsection}{\numberline {6.1.3}递推}{68}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}容斥原理}{68}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}抽屉原理}{68}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}置换群}{68}{subsection.6.1.6}
+\contentsline {subsection}{\numberline {6.1.7}母函数}{68}{subsection.6.1.7}
+\contentsline {subsection}{\numberline {6.1.8}MoBius 反演}{68}{subsection.6.1.8}
+\contentsline {subsection}{\numberline {6.1.9}偏序关系理论}{68}{subsection.6.1.9}
+\contentsline {section}{\numberline {6.2}数论}{68}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}快速幂}{68}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}GCD 与 LCM}{69}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}素数的筛法}{69}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}素数测试}{69}{subsection.6.2.4}
+\contentsline {paragraph}{费马小定理}{69}{section*.43}
+\contentsline {paragraph}{Miller-Rabin 素数测试}{69}{section*.44}
+\contentsline {subsection}{\numberline {6.2.5}欧拉函数}{70}{subsection.6.2.5}
+\contentsline {paragraph}{欧拉函数}{70}{section*.45}
+\contentsline {subsubsection}{\numberline {6.2.5.1}欧拉函数的应用}{70}{subsubsection.6.2.5.1}
+\contentsline {subsubsection}{\numberline {6.2.5.2}单独计算}{70}{subsubsection.6.2.5.2}
+\contentsline {subsubsection}{\numberline {6.2.5.3}欧拉函数表}{70}{subsubsection.6.2.5.3}
+\contentsline {subsection}{\numberline {6.2.6}扩展欧几里得算法}{71}{subsection.6.2.6}
+\contentsline {subsection}{\numberline {6.2.7}线性同余方程}{72}{subsection.6.2.7}
+\contentsline {subsection}{\numberline {6.2.8}同余方程组 中国剩余定理}{73}{subsection.6.2.8}
+\contentsline {subsubsection}{\numberline {6.2.8.1}模不互素}{73}{subsubsection.6.2.8.1}
+\contentsline {subsubsection}{\numberline {6.2.8.2}模两两互素}{73}{subsubsection.6.2.8.2}
+\contentsline {section}{\numberline {6.3}高斯消元法}{73}{section.6.3}
+\contentsline {section}{\numberline {6.4}概率问题}{73}{section.6.4}
+\contentsline {section}{\numberline {6.5}进位制}{73}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}快速幂}{73}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}斐波那契进制}{74}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}康托展开}{74}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}数学元素}{74}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}大数}{74}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}分数}{74}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}矩阵}{74}{subsection.6.6.3}
+\contentsline {section}{\numberline {6.7}其他数学问题}{74}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}约瑟夫环}{74}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}01 分数规划}{74}{subsection.6.7.2}
+\contentsline {chapter}{\numberline {第七章\hspace {0.3em}}计算几何}{75}{chapter.7}
+\contentsline {section}{\numberline {7.1}上大学以前学过的知识}{76}{section.7.1}
+\contentsline {section}{\numberline {7.2}三角形}{76}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}面积}{76}{subsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.1.1}已知三点坐标求面积}{76}{subsubsection.7.2.1.1}
+\contentsline {subsubsection}{\numberline {7.2.1.2}已知三边长求面积}{76}{subsubsection.7.2.1.2}
+\contentsline {subsubsection}{\numberline {7.2.1.3}多边形面积}{76}{subsubsection.7.2.1.3}
+\contentsline {subsection}{\numberline {7.2.2}重要的点}{76}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}多边形的简单算法}{76}{section.7.3}
+\contentsline {section}{\numberline {7.4}凸包}{76}{section.7.4}
+\contentsline {section}{\numberline {7.5}扫描线算法}{76}{section.7.5}
+\contentsline {section}{\numberline {7.6}多边形的内核}{76}{section.7.6}
+\contentsline {section}{\numberline {7.7}几何工具的综合应用}{76}{section.7.7}
+\contentsline {section}{\numberline {7.8}半平面求交}{76}{section.7.8}
+\contentsline {section}{\numberline {7.9}可视图的建立}{76}{section.7.9}
+\contentsline {section}{\numberline {7.10}点集最小圆覆盖}{76}{section.7.10}
+\contentsline {section}{\numberline {7.11}对踵点}{76}{section.7.11}
+\contentsline {chapter}{\numberline {第八章\hspace {0.3em}}ACM 与 Java}{77}{chapter.8}
+\contentsline {section}{\numberline {8.1}Hello world}{77}{section.8.1}
+\contentsline {section}{\numberline {8.2}Java 的输入输出}{77}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}输入}{77}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}输出}{77}{subsection.8.2.2}
+\contentsline {section}{\numberline {8.3}Java 的数据类型}{77}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}基本类型}{77}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}数组}{77}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}字符串}{77}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}大数}{77}{subsection.8.3.4}
+\contentsline {section}{\numberline {8.4}函数和全局变量}{77}{section.8.4}
+\contentsline {section}{\numberline {8.5}查找和排序}{77}{section.8.5}
+\contentsline {section}{\numberline {8.6}正则表达式}{77}{section.8.6}
+\contentsline {section}{\numberline {8.7}其他}{77}{section.8.7}
+\contentsline {chapter}{\numberline {第九章\hspace {0.3em}}STL}{79}{chapter.9}
+\contentsline {section}{\numberline {9.1}none}{79}{section.9.1}
+\contentsline {chapter}{\numberline {第十章\hspace {0.3em}}附录}{81}{chapter.10}
+\contentsline {section}{\numberline {10.1}C or C++ 语言本身的问题}{81}{section.10.1}
+\contentsline {section}{\numberline {10.2}超级空白文件}{81}{section.10.2}
+\contentsline {section}{\numberline {10.3}经验教训}{81}{section.10.3}
+\contentsline {section}{\numberline {10.4}gdb 常用命令}{81}{section.10.4}
