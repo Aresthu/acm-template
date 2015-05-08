@@ -356,7 +356,9 @@
 \contentsline {chapter}{\numberline {第九章\hspace {0.3em}}STL}{91}{chapter.9}
 \contentsline {section}{\numberline {9.1}none}{91}{section.9.1}
 \contentsline {chapter}{\numberline {第十章\hspace {0.3em}}附录}{93}{chapter.10}
-\contentsline {section}{\numberline {10.1}C or C++ 语言本身的问题}{93}{section.10.1}
-\contentsline {section}{\numberline {10.2}超级空白文件}{93}{section.10.2}
-\contentsline {section}{\numberline {10.3}经验教训}{93}{section.10.3}
-\contentsline {section}{\numberline {10.4}gdb 常用命令}{93}{section.10.4}
+\contentsline {section}{\numberline {10.1}C/C++ 语言本身的问题（未完待续）}{93}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}源自语言本身的问题}{93}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}未定义行为}{94}{subsection.10.1.2}
+\contentsline {section}{\numberline {10.2}超级空白文件}{95}{section.10.2}
+\contentsline {section}{\numberline {10.3}经验教训}{95}{section.10.3}
+\contentsline {section}{\numberline {10.4}gdb 常用命令}{95}{section.10.4}

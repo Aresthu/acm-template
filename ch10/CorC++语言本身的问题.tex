@@ -1,1 +1,55 @@
-\section{C or C++ 语言本身的问题}
+\section{C/C++ 语言本身的问题（未完待续）}
+	\subsection{源自语言本身的问题}
+		
+		有时候，我们会因为不熟悉 C/C++ 语言而导致在语言本身上面犯错。下面举一些例子：
+		
+		\begin{description}
+			\item[\%lld 和 \%I64d] 对 long long 来说，应该看 OJ 或比赛的要求。最好直接用 cin、cout。
+			\item[\%lf] 对 double 使用 scanf 时才用 \%lf。printf 的时候仍然是 \%f。
+			\item[短路运算符] \&\&、||、?: 这三个是短路运算符。举个例子 \lstinline|int b = f() && g();| 如果 f() 返回 0 那么 g() 不会被调用。
+			\item[memset] memset 不是初始化数组的函数，而是填充内存的函数。如果不想出错，最好第二个参数只填 0 或 1。例如：
+			
+\begin{lstlisting}
+int p[100];
+memset(p,0,sizeof(p));    // p[0] 为 0
+memset(p,-1,sizeof(p));   // p[0] 为 -1（0xFFFFFFFF）
+memset(p,1,sizeof(p));    // p[0] 为 0x01010101
+\end{lstlisting}
+	
+			\item[getchar()] 先判断它是不是 EOF 然后再转成 char 类型。
+			\item[浮点数] 应该都知道不要用“==”和“!=”来判断相等吧。还有一点，取整之前先加个小数，例如：\lstinline|int x = int(pow(2, 10)+0.0001);|。否则容易产生结果为“1023.9999999”然后被截断的问题。
+			\item[无符号整数] 注意不要拿负数和无符号整数作比较，例如 \lstinline|if (-1 > strlen("abc"))| 看似不成立，实际上 -1 已经被转换成无符号整数（也许是 4294967295）了……
+			\item[左移和右移] 尽量避免对有符号整数使用“$<<$”和“$>>$”。特别地，\emph{不要对负数使用“$>>$”运算符}。
+			\item[整数溢出] 不要想当然地认为 INT\_{}MAX 加 1 之后会变成 -INT\_{}MAX。
+			\item[string] C++ 标准没有规定 string 内部应该如何存储数据。所以不要对 string 内部结构进行任何假设。
+			\item[标准库函数的算法] 有些函数，如 qsort、strstr，C++ 标准没有规定它们应该用什么算法实现。不要假设 strstr 用了 KMP 算法。
+		\end{description}
+	
+	\subsection{未定义行为}
+		如果发现在 OJ 上用 g++ 提交不能过而 C++ 能过（或者反过来），那么很有可能是因为你的代码中存在未定义行为。这样的话，就算你 AC 了，你的程序也是有错误的。
+		
+		在 C/C++ 中，除了标准中规定的行为，其他的都是未定义行为。对于未定义行为，编译器不同，结果可能一样，也可能不一样。以下是一些常见的例子。
+		
+		\begin{description}
+			\item[未初始化的变量] 变量未初始化就使用。如 \lstinline|int k; k++;|
+			\item[多个操作数] 如果有两个以上的操作数，或者函数有多个参数，C++ 可没规定到底应该先计算哪个（短路运算符除外）：
+			
+\begin{lstlisting}
+int b = f() + g();  
+printf("%d %d", f(), g());
+// 不能确定到底是先执行 f() 还是 g()
+\end{lstlisting}
+
+			\item[访问越界] 超过数组范围的访问。例如 \lstinline|int p[4]; p[4]=1;|
+			\item[产生副作用的运算符] 不恰当地使用“++”、“--”或其他产生副作用的运算符也会引发未定义行为。例如谭浩强书上经典的 \lstinline|a=a++;| 和 \lstinline|a+=a-=a*a;|。C++ 标准没有规定它们应该怎样计算，所以它们的计算顺序是无法确定的。
+			\item[无返回值的函数] 函数没有返回值。
+			\item[函数返回引用局部变量的指针] 因为函数结束，局部变量所占内存空间就会被销毁。例如：
+
+\begin{lstlisting}
+int * f()
+{
+	int p=100;
+	return &p;
+}
+\end{lstlisting}
+		\end{description}
