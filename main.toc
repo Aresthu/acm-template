@@ -343,22 +343,22 @@
 \contentsline {section}{\numberline {8.1}Hello world}{89}{section.8.1}
 \contentsline {section}{\numberline {8.2}Java 的输入输出}{89}{section.8.2}
 \contentsline {subsection}{\numberline {8.2.1}输入}{89}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}输出}{89}{subsection.8.2.2}
-\contentsline {section}{\numberline {8.3}Java 的数据类型}{89}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}基本类型}{89}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}数组}{89}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}字符串}{89}{subsection.8.3.3}
-\contentsline {subsection}{\numberline {8.3.4}大数}{89}{subsection.8.3.4}
-\contentsline {section}{\numberline {8.4}函数和全局变量}{89}{section.8.4}
-\contentsline {section}{\numberline {8.5}查找和排序}{89}{section.8.5}
-\contentsline {section}{\numberline {8.6}正则表达式}{89}{section.8.6}
-\contentsline {section}{\numberline {8.7}其他}{89}{section.8.7}
-\contentsline {chapter}{\numberline {第九章\hspace {0.3em}}STL}{91}{chapter.9}
-\contentsline {section}{\numberline {9.1}none}{91}{section.9.1}
-\contentsline {chapter}{\numberline {第十章\hspace {0.3em}}附录}{93}{chapter.10}
-\contentsline {section}{\numberline {10.1}C/C++ 语言本身的问题（未完待续）}{93}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}源自语言本身的问题}{93}{subsection.10.1.1}
-\contentsline {subsection}{\numberline {10.1.2}未定义行为}{94}{subsection.10.1.2}
-\contentsline {section}{\numberline {10.2}超级空白文件}{95}{section.10.2}
-\contentsline {section}{\numberline {10.3}经验教训}{95}{section.10.3}
-\contentsline {section}{\numberline {10.4}gdb 常用命令}{95}{section.10.4}
+\contentsline {subsection}{\numberline {8.2.2}输出}{90}{subsection.8.2.2}
+\contentsline {section}{\numberline {8.3}Java 的数据类型}{90}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}基本类型}{90}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}数组}{91}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}字符串}{91}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}大数}{91}{subsection.8.3.4}
+\contentsline {section}{\numberline {8.4}函数和全局变量}{91}{section.8.4}
+\contentsline {section}{\numberline {8.5}查找和排序}{91}{section.8.5}
+\contentsline {section}{\numberline {8.6}正则表达式}{91}{section.8.6}
+\contentsline {section}{\numberline {8.7}其他}{91}{section.8.7}
+\contentsline {chapter}{\numberline {第九章\hspace {0.3em}}STL}{93}{chapter.9}
+\contentsline {section}{\numberline {9.1}none}{93}{section.9.1}
+\contentsline {chapter}{\numberline {第十章\hspace {0.3em}}附录}{95}{chapter.10}
+\contentsline {section}{\numberline {10.1}C/C++ 语言本身的问题（未完待续）}{95}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}源自语言本身的问题}{95}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}未定义行为}{96}{subsection.10.1.2}
+\contentsline {section}{\numberline {10.2}超级空白文件}{97}{section.10.2}
+\contentsline {section}{\numberline {10.3}经验教训}{97}{section.10.3}
+\contentsline {section}{\numberline {10.4}gdb 常用命令}{97}{section.10.4}

@@ -1,1 +1,12 @@
 \subsection{输入}
+	可以通过 Scanner 类进行数据的输入。以下是 Java 版的``a+b''：
+	
+	\lstinputlisting[language=java]{ch8/codes/input.java}
+	
+	读取整数、浮点数可以用 nextInt、nextDouble 方法。读取一个字符串可以用 next() 和 nextLine() 方法，不过 next 读取的是一``段'' (就和 scanf 的 \%s 一样)，nextLine 读取的是一整行。\footnote{和 C 语言一样，读完数字，得先跳过回车符，然后才能读一整行。}
+	
+	nextInt 的行为和 C/C++ 语言还有些不同：假如从``12ab'' 中读取整数，C/C++ 读出来的是``12''，而 Java 会报错。所以，如果数字后面挨着的不是回车或空格，你需要用其他方法来读取数字。
+	
+	如果需要判断 ``是否为文件结尾''，可以用另一种方法——判断``是否还可以再读取一个数''，即 hasNext()、hasNextInt()、hasNextDouble()、hasNextLine()。
+	
+	此外，Scanner 类也可以用于从字符串中提取数值。

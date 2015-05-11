@@ -1,1 +1,7 @@
 \section{函数和全局变量}
+	main 函数是在一个类中，所以调用``函数'' (其实是类的方法) 时要讲 ``类的规矩''。如果需要调用一个函数，可以用以下两种方法来解决：
+	
+	\begin{enumerate}
+		\item 把所有 ``函数'' 定义成 static 的。当然，``全局变量'' 也应该被定义成 static 的。
+		\item 在调用函数之前，生成一个 Main`类的实例：Main m = new Main();
+	\end{enumerate}
